@@ -1,0 +1,108 @@
+.age-confirmation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(173, 216, 230, 0.8); /* Color de fondo opaco */
+    display: flex;
+    flex-direction: column; /* Alinear elementos verticalmente */
+    justify-content: center; /* Centrar verticalmente */
+    align-items: center; /* Centrar horizontalmente */
+    z-index: 9999; /* Asegura que el mensaje esté encima de todo */
+    padding: 20px; /* Añade espacio alrededor del mensaje */
+}
+
+.age-confirmation img {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen para que se ajuste al contenedor */
+    height: auto; /* Asegura que la altura de la imagen se ajuste automáticamente */
+    margin: 20px auto; /* Centra la imagen horizontalmente y agrega espacio vertical */
+}
+
+.age-confirmation p {
+    margin: 10px 0; /* Añade espacio alrededor del texto */
+}
+
+.buttons-container {
+    margin-top: 20px; /* Espacio superior entre los botones y el texto */
+}
+
+.buttons-container button {
+    margin: 0 10px; /* Espacio horizontal entre los botones */
+    padding: 10px 20px; /* Espacio interno del botón */
+    font-size: 16px; /* Tamaño de fuente del botón */
+    background-color: #007bff; /* Color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cursor apuntando */
+}
+
+.buttons-container button:hover {
+    background-color: #0056b3; /* Cambia el color de fondo del botón al pasar el cursor */
+}
+.age-confirmation .welcome-image {
+    max-width: 70%; /* Aumentar el tamaño máximo de la imagen */
+    max-height: 70%; /* Aumentar la altura máxima de la imagen */
+    margin: 20px auto; /* Centrar la imagen horizontalmente y agregar espacio vertical */
+    display: block;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+
+
+.age-confirmation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo opaco */
+    z-index: -1; /* Se coloca detrás del contenido */
+}
+
+.content {
+    z-index: 1; /* Se coloca delante del fondo opaco */
+    text-align: center;
+    padding: 20px;
+    background-color: #59b5d179; /* Fondo blanco */
+    border-radius: 10px; /* Bordes redondeados */
+
+    
+}
+
+.pp {
+    color: hsla(0, 0%, 100%, 0.774);
+}
+
+.welcome-image {
+    max-width: 300px; /* Tamaño máximo de la imagen */
+    height: auto;
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+    margin: 20px auto;
+}
+
+
+.textTitle1{
+    color: hsl(0, 0%, 100%);;
+}
+
+.textTitle2{
+    color: hsl(0, 0%, 100%);;
+}
+
+
+
+

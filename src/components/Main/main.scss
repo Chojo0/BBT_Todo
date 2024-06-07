@@ -1,0 +1,498 @@
+:root {
+    --PrimaryColor: hsl(199, 100%, 33%);
+    --SecondaryColor: hsl(187, 85%, 43%);
+    --gradientColor: linear-gradient(to right, hsl(187, 77%, 40%), hsl(199,100%,33%));
+    --whiteColor: hsl(0, 0%, 100%);
+    --blackColor: hsl(201, 33%, 16%);
+    --textColor: hsl(210, 1%, 27%);
+    --whiteColorDeam: hsl(0,0%,93%);
+    --greyText: rgb(190, 190,190);
+    --inputColor: rgb(239,239,239);
+    --bodyColor: rgb(240,240,246);
+    --cardBG: rgb(225,225,235);
+}
+
+.main{
+    width: 100%;
+    padding: 6rem 1.5rem 3rem;
+    color: var(--blackColor);
+    z-index: 100;
+   
+    .listProducts{
+        .mainTitle{
+            width: max-content;
+            color: var(--textColor);
+            margin: 1rem 0;
+            z-index: 2000;
+        }
+
+        .products {
+            justify-content: center;
+            display: grid;
+            place-items: center;
+            gap: 3rem;
+            padding-block: 2rem;
+
+            .product {
+                height: 100%;
+                display: grid;
+                row-gap: 10px;
+                padding: 1rem;
+                border-radius: 10px;
+                align-items: center;
+                background: var(--cardBG);
+                box-shadow: 0 2px 4px rgba(140,140,141,0.549);
+                overflow: hidden;
+
+                .imglist{
+                    height: 250px;
+                    width: 100%;
+                    overflow: hidden;
+
+                    img{
+                        height: 100%;
+                        width: 100%;
+                        object-fit: cover;
+                        transition: 2s ease;
+                    }
+
+                    &:hover{
+                        img{
+                            transform: scale(1.1);
+                        }
+                    }
+                }
+
+                .listInfo{
+                    padding: 1rem;
+
+                    .prodTitle{
+                        color: var(--blackColor);
+                        font-size: 1.25rem;
+                    }
+
+                    .btn{
+                        margin-top: 1rem;
+                        align-items: center;
+                        .verMas{
+                            text-align: center;
+                            border-radius: 1rem;
+                            color: var(--whiteColor);
+                            padding: 1px 10px;
+                            font-size: 15px;
+                        }
+                    }
+                    
+                }
+            }   
+        }            
+    }
+
+    .productsDetail{
+        justify-content: center;
+        display: grid;
+        place-items: center;
+
+        .detail{
+            display: flex;
+            height: 100%;
+            row-gap: 10px;
+            padding: 1rem;
+            border-radius: 10px;
+            align-items: center;
+            background: var(--cardBG);
+            box-shadow: 0 2px 4px rgba(140,140,141,0.549);
+            overflow: hidden;
+
+            .imgDetail{
+                height: 500px;
+                width: 100%;
+                overflow: hidden;
+                display: grid;
+                place-items: center;
+
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                    transition: 2s ease;
+                }
+
+                &:hover{
+                    img{
+                        transform: scale(1.1);
+                    }
+                }
+            }
+
+            .productDetail{
+                padding: 1rem;
+
+                .prodTitle{
+                    color: var(--blackColor);
+                    font-size: 1.5rem;
+                }
+                    
+                .categ{
+                    width: 100%;
+                    padding: .5rem;
+                    margin: .5rem;
+                    font-size: 1rem;
+                    color: var(--textColor);
+                }
+                .price{
+                    width: 100%;
+                    padding: .5rem;
+                    margin: .5rem;
+                    font-size: 1rem;
+                    color: var(--textColor);
+                }
+
+                .itemCount{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .cantidad{
+                        font-size: 20px;
+                        margin: 10px;
+                        font-weight: 500;
+                    }
+                    .btn{
+                        width: max-content;
+                        font-size: 15px;
+                        margin: 10px;
+                        color: var(--whiteColor);
+                        font-weight: 500;
+                    }
+                }
+
+                .descrip{
+                    width: 100%;
+                    padding: 1rem ;
+                    margin: .5rem ;
+                    font-size: 1rem;
+                    color: var(--textColor);
+                }
+            }
+        }    
+    }
+
+    .car{
+        padding: 3rem 1rem 1rem;
+
+        .carTitle{
+            padding-bottom: 1rem;
+            color: var(--blackColor);
+        }
+
+        .carContain{
+            width: max-content;
+            height: 100%;
+            padding: 1rem;
+            border-radius: 10px;
+            align-items: center;
+            background: var(--cardBG);
+            box-shadow: 0 2px 4px rgba(140,140,141,0.549);
+            overflow: hidden;
+
+            .carDetails{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 10px;
+                border-bottom: 1px solid #ccc;
+
+                .imgCar {
+                    flex: 0 0 auto;
+                    img {
+                      width: 100px;
+                      height: 100px;
+                      object-fit: cover;
+                    }
+                }
+
+                .productQuantity {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+
+                    .btn{
+                        margin: 1rem;
+                    }
+                }
+              
+            }
+
+
+        }
+
+        .btn{
+            color: var(--whiteColor);
+            margin: 1rem;
+        }
+
+        .secondaryTitle{
+            padding: 1rem 0 0;
+            color: var(--textColor);
+        }
+
+        .checkOut{
+            position: absolute;
+            background: var(--whiteColorDeam);
+            height: max-content;
+            width: max-content;
+            border-radius: 1rem;
+            top: -500rem;
+            padding: 1rem;        
+            left: 50%;
+            transform: translate(-50%);
+            z-index: 2000;
+            box-shadow: 0 2px 4px rgba(2, 15, 29, 0.432);
+            transition: .4s ease-in-out;
+            justify-content: center;
+            display: grid;
+            place-items: center;
+
+            .formulary{
+                margin: 1rem 0;
+                display: flex;
+                flex-direction: column;
+                gap: .5rem;
+                align-items: center;
+                width: max-content;
+    
+                .checkOutTitle{
+                    font-size: 2rem;
+                }
+    
+                input{
+                    padding: .5rem;
+                    width: 18rem;
+                    border-radius: .5rem;
+                    border: 2px solid var(--blackColor);
+                    
+                    &:focus{
+                        outline: 0;
+                        border: 2px solid var(--textColor);
+                        outline: 2px solid var(--textColor);
+                    }
+                }
+    
+                .btn{
+                    color: var(--whiteColor);
+                    
+                }
+            } 
+    
+            .closeCheckOut{
+                position: absolute;
+                top: 1rem;
+                right: 1.5rem;
+                color: var(--PrimaryColor);
+                &:hover{
+                    color: var(--SecondaryColor);
+                }
+            }
+        }
+
+        .purchaseComfirm{
+            position: absolute;
+            background: var(--whiteColorDeam);
+            height: max-content;
+            width: max-content;
+            border-radius: 1rem;
+            top: -500rem;
+            padding: 1rem;        
+            left: 50%;
+            transform: translate(-50%);
+            z-index: 2000;
+            box-shadow: 0 2px 4px rgba(2, 15, 29, 0.432);
+            transition: .4s ease-in-out;
+            justify-content: center;
+            display: grid;
+            place-items: center; 
+
+            .purchaseTitle{
+                padding: 1.5rem;
+                color: var(--blackColor);
+            }
+
+            .idPedido{
+                color: var(--textColor);
+                padding: 0 0 1rem;
+            }
+    
+            .closePurchaseComfirm{
+                position: absolute;
+                top: 1rem;
+                right: 1.5rem;
+                color: var(--PrimaryColor);
+                &:hover{
+                    color: var(--SecondaryColor);
+                }
+            }
+        }
+
+        .activeCheckOut{
+            top: 8rem;
+        }
+        
+        .activePurchaseComfirm{
+            top: 8rem;
+        }
+    }
+} 
+
+
+
+@media screen and (max-width: 500px){
+    .carContain {
+        width: 100%;
+  
+      .carDetails {
+        flex-direction: column;
+        align-items: flex-start;
+        
+        .imgCar {
+            img {
+                width: 80px;
+                height: 80px;
+            }
+        }
+  
+        .productInfo, .productQuantity, .totalPrice {
+          padding: 5px 0;
+        }
+      }
+    }
+}
+
+@media screen and (min-width: 500px){
+    .listProducts{
+        .mainTitle{
+            font-size: 1.5rem;
+        }
+        .products{
+            grid-template-columns: repeat(2, 1fr);
+            .product{
+                height: auto;
+                .imglist{
+                    max-width: 400px;
+                    img{
+                        max-height: 400px;
+                    }
+                }
+            }
+        }
+    }
+
+    .productsDetail{
+        .detail{
+            flex-direction: column;
+            height: auto;
+            .imgDetail{
+                max-width: 400px;
+                img{
+                    max-height: 400px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 840px){
+
+    .listProducts{
+        .products{
+            grid-template-columns: repeat(3, 1fr);
+
+            .product{
+                height: auto;
+                max-width: 300px;
+                .imglist{
+                    max-width: 300px;
+                    img{
+                        max-height: 300px;
+                    }
+                }
+            }
+        }
+    }
+
+    .productsDetail{
+        
+        .detail{
+            flex-direction: row;
+            align-items: flex-start;
+            .imgDetail{
+                max-width: 350px;
+                img{
+                    max-height: 350px;
+                }
+            }
+            .productDetail{
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    .carContain {
+      width: 100%;
+
+    }
+}
+
+@media screen and (min-width: 1024px){
+    .listProducts{
+        .products{
+            .product{
+                max-width: 400px;
+                .imglist{
+                    max-width: 400px;
+                    img{
+                        max-height: 400px;
+                    }
+                }
+            }
+        }
+    }
+
+    .productsDetail{
+        .detail{
+            .imgDetail{
+                max-width: 500px;
+                img{
+                    max-height: 500px;
+                }
+            }
+        }
+    }
+
+    .carDetails {
+      .imgCar {
+        img {
+          width: 70px;
+          height: 70px;
+        }
+      }
+
+      .productInfo, .productQuantity, .totalPrice {
+        padding: 0 20px;
+      }
+    }
+}
+
+@media screen and (min-width: 1440px){
+    .listProducts{
+        .products{
+            .product{
+                .imglist{
+                    max-width: 600px;
+                    img{
+                        max-height: 600px;
+                    }
+                }
+            }
+        }
+    }
+}

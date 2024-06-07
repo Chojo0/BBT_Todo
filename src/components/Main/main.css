@@ -1,0 +1,410 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 77%, 40%), hsl(199,100%,33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(210, 1%, 27%);
+  --whiteColorDeam: hsl(0,0%,93%);
+  --greyText: rgb(190, 190,190);
+  --inputColor: rgb(239,239,239);
+  --bodyColor: rgb(240,240,246);
+  --cardBG: rgb(225,225,235);
+}
+
+.main {
+  width: 100%;
+  padding: 6rem 1.5rem 3rem;
+  color: var(--blackColor);
+  z-index: 100;
+}
+.main .listProducts .mainTitle {
+  width: -moz-max-content;
+  width: max-content;
+  color: var(--textColor);
+  margin: 1rem 0;
+  z-index: 2000;
+}
+.main .listProducts .products {
+  justify-content: center;
+  display: grid;
+  place-items: center;
+  gap: 3rem;
+  padding-block: 2rem;
+}
+.main .listProducts .products .product {
+  height: 100%;
+  display: grid;
+  row-gap: 10px;
+  padding: 1rem;
+  border-radius: 10px;
+  align-items: center;
+  background: var(--cardBG);
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+  overflow: hidden;
+}
+.main .listProducts .products .product .imglist {
+  height: 250px;
+  width: 100%;
+  overflow: hidden;
+}
+.main .listProducts .products .product .imglist img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 2s ease;
+}
+.main .listProducts .products .product .imglist:hover img {
+  transform: scale(1.1);
+}
+.main .listProducts .products .product .listInfo {
+  padding: 1rem;
+}
+.main .listProducts .products .product .listInfo .prodTitle {
+  color: var(--blackColor);
+  font-size: 1.25rem;
+}
+.main .listProducts .products .product .listInfo .btn {
+  margin-top: 1rem;
+  align-items: center;
+}
+.main .listProducts .products .product .listInfo .btn .verMas {
+  text-align: center;
+  border-radius: 1rem;
+  color: var(--whiteColor);
+  padding: 1px 10px;
+  font-size: 15px;
+}
+.main .productsDetail {
+  justify-content: center;
+  display: grid;
+  place-items: center;
+}
+.main .productsDetail .detail {
+  display: flex;
+  height: 100%;
+  row-gap: 10px;
+  padding: 1rem;
+  border-radius: 10px;
+  align-items: center;
+  background: var(--cardBG);
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+  overflow: hidden;
+}
+.main .productsDetail .detail .imgDetail {
+  height: 500px;
+  width: 100%;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+.main .productsDetail .detail .imgDetail img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: 2s ease;
+}
+.main .productsDetail .detail .imgDetail:hover img {
+  transform: scale(1.1);
+}
+.main .productsDetail .detail .productDetail {
+  padding: 1rem;
+}
+.main .productsDetail .detail .productDetail .prodTitle {
+  color: var(--blackColor);
+  font-size: 1.5rem;
+}
+.main .productsDetail .detail .productDetail .categ {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  color: var(--textColor);
+}
+.main .productsDetail .detail .productDetail .price {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  color: var(--textColor);
+}
+.main .productsDetail .detail .productDetail .itemCount {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main .productsDetail .detail .productDetail .itemCount .cantidad {
+  font-size: 20px;
+  margin: 10px;
+  font-weight: 500;
+}
+.main .productsDetail .detail .productDetail .itemCount .btn {
+  width: -moz-max-content;
+  width: max-content;
+  font-size: 15px;
+  margin: 10px;
+  color: var(--whiteColor);
+  font-weight: 500;
+}
+.main .productsDetail .detail .productDetail .descrip {
+  width: 100%;
+  padding: 1rem;
+  margin: 0.5rem;
+  font-size: 1rem;
+  color: var(--textColor);
+}
+.main .car {
+  padding: 3rem 1rem 1rem;
+}
+.main .car .carTitle {
+  padding-bottom: 1rem;
+  color: var(--blackColor);
+}
+.main .car .carContain {
+  width: -moz-max-content;
+  width: max-content;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 10px;
+  align-items: center;
+  background: var(--cardBG);
+  box-shadow: 0 2px 4px rgba(140, 140, 141, 0.549);
+  overflow: hidden;
+}
+.main .car .carContain .carDetails {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+.main .car .carContain .carDetails .imgCar {
+  flex: 0 0 auto;
+}
+.main .car .carContain .carDetails .imgCar img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.main .car .carContain .carDetails .productQuantity {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.main .car .carContain .carDetails .productQuantity .btn {
+  margin: 1rem;
+}
+.main .car .btn {
+  color: var(--whiteColor);
+  margin: 1rem;
+}
+.main .car .secondaryTitle {
+  padding: 1rem 0 0;
+  color: var(--textColor);
+}
+.main .car .checkOut {
+  position: absolute;
+  background: var(--whiteColorDeam);
+  height: -moz-max-content;
+  height: max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 1rem;
+  top: -500rem;
+  padding: 1rem;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2000;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.432);
+  transition: 0.4s ease-in-out;
+  justify-content: center;
+  display: grid;
+  place-items: center;
+}
+.main .car .checkOut .formulary {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  align-items: center;
+  width: -moz-max-content;
+  width: max-content;
+}
+.main .car .checkOut .formulary .checkOutTitle {
+  font-size: 2rem;
+}
+.main .car .checkOut .formulary input {
+  padding: 0.5rem;
+  width: 18rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--blackColor);
+}
+.main .car .checkOut .formulary input:focus {
+  outline: 0;
+  border: 2px solid var(--textColor);
+  outline: 2px solid var(--textColor);
+}
+.main .car .checkOut .formulary .btn {
+  color: var(--whiteColor);
+}
+.main .car .checkOut .closeCheckOut {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  color: var(--PrimaryColor);
+}
+.main .car .checkOut .closeCheckOut:hover {
+  color: var(--SecondaryColor);
+}
+.main .car .purchaseComfirm {
+  position: absolute;
+  background: var(--whiteColorDeam);
+  height: -moz-max-content;
+  height: max-content;
+  width: -moz-max-content;
+  width: max-content;
+  border-radius: 1rem;
+  top: -500rem;
+  padding: 1rem;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 2000;
+  box-shadow: 0 2px 4px rgba(2, 15, 29, 0.432);
+  transition: 0.4s ease-in-out;
+  justify-content: center;
+  display: grid;
+  place-items: center;
+}
+.main .car .purchaseComfirm .purchaseTitle {
+  padding: 1.5rem;
+  color: var(--blackColor);
+}
+.main .car .purchaseComfirm .idPedido {
+  color: var(--textColor);
+  padding: 0 0 1rem;
+}
+.main .car .purchaseComfirm .closePurchaseComfirm {
+  position: absolute;
+  top: 1rem;
+  right: 1.5rem;
+  color: var(--PrimaryColor);
+}
+.main .car .purchaseComfirm .closePurchaseComfirm:hover {
+  color: var(--SecondaryColor);
+}
+.main .car .activeCheckOut {
+  top: 8rem;
+}
+.main .car .activePurchaseComfirm {
+  top: 8rem;
+}
+
+@media screen and (max-width: 500px) {
+  .carContain {
+    width: 100%;
+  }
+  .carContain .carDetails {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .carContain .carDetails .imgCar img {
+    width: 80px;
+    height: 80px;
+  }
+  .carContain .carDetails .productInfo, .carContain .carDetails .productQuantity, .carContain .carDetails .totalPrice {
+    padding: 5px 0;
+  }
+}
+@media screen and (min-width: 500px) {
+  .listProducts .mainTitle {
+    font-size: 1.5rem;
+  }
+  .listProducts .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .listProducts .products .product {
+    height: auto;
+  }
+  .listProducts .products .product .imglist {
+    max-width: 400px;
+  }
+  .listProducts .products .product .imglist img {
+    max-height: 400px;
+  }
+  .productsDetail .detail {
+    flex-direction: column;
+    height: auto;
+  }
+  .productsDetail .detail .imgDetail {
+    max-width: 400px;
+  }
+  .productsDetail .detail .imgDetail img {
+    max-height: 400px;
+  }
+}
+@media screen and (min-width: 840px) {
+  .listProducts .products {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .listProducts .products .product {
+    height: auto;
+    max-width: 300px;
+  }
+  .listProducts .products .product .imglist {
+    max-width: 300px;
+  }
+  .listProducts .products .product .imglist img {
+    max-height: 300px;
+  }
+  .productsDetail .detail {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .productsDetail .detail .imgDetail {
+    max-width: 350px;
+  }
+  .productsDetail .detail .imgDetail img {
+    max-height: 350px;
+  }
+  .productsDetail .detail .productDetail {
+    margin-left: 1rem;
+  }
+  .carContain {
+    width: 100%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .listProducts .products .product {
+    max-width: 400px;
+  }
+  .listProducts .products .product .imglist {
+    max-width: 400px;
+  }
+  .listProducts .products .product .imglist img {
+    max-height: 400px;
+  }
+  .productsDetail .detail .imgDetail {
+    max-width: 500px;
+  }
+  .productsDetail .detail .imgDetail img {
+    max-height: 500px;
+  }
+  .carDetails .imgCar img {
+    width: 70px;
+    height: 70px;
+  }
+  .carDetails .productInfo, .carDetails .productQuantity, .carDetails .totalPrice {
+    padding: 0 20px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .listProducts .products .product .imglist {
+    max-width: 600px;
+  }
+  .listProducts .products .product .imglist img {
+    max-height: 600px;
+  }
+}/*# sourceMappingURL=main.css.map */

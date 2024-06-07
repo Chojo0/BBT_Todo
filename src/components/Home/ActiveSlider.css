@@ -1,0 +1,167 @@
+:root {
+  --PrimaryColor: hsl(199, 100%, 33%);
+  --SecondaryColor: hsl(187, 85%, 43%);
+  --gradientColor: linear-gradient(to right, hsl(187, 77%, 40%), hsl(199,100%,33%));
+  --whiteColor: hsl(0, 0%, 100%);
+  --blackColor: hsl(201, 33%, 16%);
+  --textColor: hsl(210, 1%, 27%);
+  --whiteColorDeam: hsl(0,0%,93%);
+  --greyText: rgb(190, 190,190);
+  --inputColor: rgb(239,239,239);
+  --bodyColor: rgb(240,240,246);
+  --cardBG: rgb(225,225,235);
+}
+
+.active-slider {
+  width: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+  position: relative;
+}
+
+.slide-container {
+  position: relative;
+  width: 100%;
+  height: 800px; /* Incrementamos la altura para asegurar visibilidad */
+  overflow: hidden;
+}
+
+.slide-image {
+  width: 100%;
+  height: 60%; /* Ajustamos la altura de la imagen */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 8px 8px 0 0; /* Borde redondeado solo en la parte superior */
+}
+
+.slide-container:hover .slide-image {
+  transform: scale(1.1);
+}
+
+.slide-content {
+  position: absolute;
+  top: 60%; /* Colocamos el contenido debajo de la imagen */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.7);
+  color: rgb(255, 255, 255);
+  border-radius: 0 0 8px 8px; /* Borde redondeado solo en la parte inferior */
+  overflow-y: auto; /* Habilitamos el desplazamiento vertical */
+  z-index: 1; /* Aseguramos que el contenido esté por encima de la imagen */
+}
+.slide-container:hover .slide-content {
+  opacity: 1;
+  background: rgba(0, 0, 0, 0.9);
+}
+
+.icon {
+  font-size: 32px;
+  color: var(--PrimaryColor);
+}
+
+.title {
+  font-size: 1.6rem;
+  margin-top: 10px;
+  color: var(--whiteColor);
+}
+
+.content {
+  font-size: 1rem;
+  margin-top: 10px;
+}
+
+.swiper-pagination-bullet {
+  background: #ffffff;
+  opacity: 0.7;
+}
+
+.swiper-pagination-bullet-active {
+  background: #007aff;
+  opacity: 1;
+}
+
+.swiper-wrapper {
+  display: flex !important;
+}
+
+.swiper-slide {
+  flex: 0 0 auto !important;
+}
+
+.swiper-slide:not(.swiper-slide-active) {
+  transform: scale(0.8);
+  opacity: 0.6;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.swiper-slide-prev, .swiper-slide-next {
+  cursor: pointer;
+}
+
+.swiper-slide-prev {
+  transform: translateX(-25%);
+}
+
+.swiper-slide-next {
+  transform: translateX(25%);
+}
+
+.home-title.hovered {
+  color: #00bcd4;
+}
+
+.quantity-control {
+  position: absolute;
+  bottom: 15px;
+  right: 0.10px; /* Movemos los botones lo más posible hacia la derecha */
+  z-index: 2;
+}
+.quantity-button {
+  width: 40px;
+  height: 40px;
+  font-size: 20px;
+  background-color: #eee;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+.quantity-button:hover {
+  background-color: #ddd;
+}
+
+.quantity-control span {
+  margin: 0 10px;
+  font-size: 20px;
+}
+
+.add-to-cart {
+  position: absolute;
+  bottom: 10px; /* Ajustamos la posición del botón hacia abajo */
+  left: 20px;
+  z-index: 2;
+}
+
+.add-to-cart:hover {
+  background-color: var(--SecondaryColor);
+}
+.quantity-button.small-button {
+  width: 24px; /* Reducimos el ancho del botón */
+  height: 24px; /* Reducimos la altura del botón */
+  font-size: 12px; /* Reducimos el tamaño de la fuente del botón */
+}
+.price {
+  margin-right: 20px; /* Ajustamos el margen izquierdo para mover el precio hacia la izquierda */
+}
