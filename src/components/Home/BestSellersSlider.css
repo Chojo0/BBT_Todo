@@ -52,6 +52,10 @@
   overflow: auto;
 }
 
+.slide-content .price{
+    padding-left: 50px;
+  }
+
 .slide-container:hover .slide-content {
   opacity: 1;
   height: max-content;
@@ -141,6 +145,7 @@
   padding: 5px 10px;
   cursor: pointer;
 }
+
 .best-sellers-slider .quantity-control span {
   margin: 0 10px;
 }
@@ -160,6 +165,7 @@
 .best-sellers-slider .add-to-cart svg {
   margin-right: 5px;
 }
+
 .best-sellers-slider {
   width: 100%;
   position: relative;
