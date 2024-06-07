@@ -126,6 +126,8 @@
 
 .best-sellers-slider .slide-content {
   text-align: center;
+  max-width: 400px;
+  left: 15%;
 }
 .best-sellers-slider .quantity-control {
   display: flex;
