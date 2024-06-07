@@ -85,8 +85,8 @@ const BestSellersSlider = () => {
 
   return (
     <div className="best-sellers-slider section container">
-      <h1 data-aos="fade-right" className="home-title">Productos más vendidos y más caros</h1>
-      <p data-aos="fade-right" className="home-description">Explora nuestros productos más populares y más caros</p>
+      <h1 data-aos="fade-right" className="home-title">Productos más vendidos</h1>
+      <p data-aos="fade-right" className="home-description">Explora nuestros productos más populares</p>
       <Slider {...settings}>
         {products.map((product) => (
           <div key={product.id} className="slide-container">
