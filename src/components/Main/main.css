@@ -303,6 +303,16 @@
 }
 
 @media screen and (max-width: 500px) {
+  .productsDetail .detail {
+    flex-direction: column;
+    height: auto;
+  }
+  .productsDetail .detail .imgDetail {
+    max-width: 400px;
+  }
+  .productsDetail .detail .imgDetail img {
+    max-height: 400px;
+  }
   .carContain {
     width: 100%;
   }
@@ -318,7 +328,7 @@
     padding: 5px 0;
   }
 }
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 501px) {
   .listProducts .mainTitle {
     font-size: 1.5rem;
   }

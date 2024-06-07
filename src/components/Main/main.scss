@@ -346,6 +346,20 @@
 
 
 @media screen and (max-width: 500px){
+
+    .productsDetail{
+        .detail{
+            flex-direction: column;
+            height: auto;
+            .imgDetail{
+                max-width: 400px;
+                img{
+                    max-height: 400px;
+                }
+            }
+        }
+    }
+    
     .carContain {
         width: 100%;
   
@@ -367,7 +381,7 @@
     }
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 501px){
     .listProducts{
         .mainTitle{
             font-size: 1.5rem;
